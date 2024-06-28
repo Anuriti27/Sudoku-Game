@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color:#0d0529;
+    
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color:#ffff99;
+    font-size: 40px;
+}
+
+#sudoku-board {
+    display: grid;
+    grid-template-columns: repeat(9, 42px);
+    grid-gap: 2px;
+    margin-bottom: 30px;
+    background-color:bisque;
+}
+
+#sudoku-board input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+.btn-container{
+    display: flex;
+    gap: 15px;
+}
+.btn{
+    border: none;
+    background-color: #ffff99;
+    font-size: 1rem;
+    color: #0d0529;
+    padding:0.5rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-weight: 600;
+    transition: background 0.5s, transform 0.5s;
+}
+.btn:hover{
+    background-color:#ff99ff;
+    transform: translateY(-2px);
+}
